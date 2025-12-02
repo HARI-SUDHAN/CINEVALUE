@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --main-color:#ff2c1f;
+    --text-color:#020307;
+    --bg-color:#fff;
+}
+
+body{
+    background: var(--text-color);
+    color: var(--bg-color);
+    padding-top: 90px;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 4.5rem 0 1.5rem;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    top: 0; 
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+.logo{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.logo .bx{
+    font-size: 24px;
+    color: var(--main-color);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    column-gap: 5rem;
+}
+
+.navbar li{
+    position: relative;
+}
+
+.navbar a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--bg-color);
+}
+
+.navbar a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: var(--main-color);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.4s all linear;
+}
+
+.navbar a:hover::after, .navbar .movies-active::after{
+    width: 100%;
+}
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000001;
+    display: none;
+}
+
+.btn{
+    padding: 0.7rem 1.4rem;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 400;
+    border-radius: 0.5rem;
+}
+
+.btn:hover{
+    background: #fa1216;
+}
+
+.heading{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.movies-container{
+    max-width: 968px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.box .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box .box-img img:hover{
+    transform: translateY(-10px);
+    transition: 0.2s all linear;
+}
+
+.box h3{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.box span{
+    font-size: 13px;
+}
+
+
+/* Heart icon */
+.heart {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.heart.active {
+  animation: pop 0.4s ease forwards;
+}
+
+.heart.active {
+  color: red; /* filled heart when active */
+}
+
+/* Make .box position relative so heart can sit inside */
+.box {
+  position: relative;
+  flex: 0 0 auto;
+  width: 180px;
+  background: #111;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  cursor: grab;
+  transition: transform 0.3s ease;
+}
+
+.latest-box {
+  position: relative;
+  flex: 0 0 auto;
+  width: 180px;
+  background: #111;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  cursor: grab;
+  transition: transform 0.3s ease;
+}
+
+
+/* ===================== */
+/*   MOBILE RESPONSIVE   */
+/* ===================== */
+@media (max-width: 768px) {
+
+  /* Header: less padding on small screens */
+  header{
+      padding: 10px 20px;
+  }
+
+  /* Show menu icon on mobile */
+  #menu-icon{
+      display: block;
+      color: #fff;
+  }
+
+  /* Make navbar a dropdown menu on mobile */
+  .navbar{
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      row-gap: 1rem;
+      background: #000;
+      padding: 1.5rem 2rem 2rem;
+      transform: translateY(-200%);
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.3s;
+  }
+
+  /* When you add .show class with JS, menu will open */
+  .navbar.show{
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+  }
+
+  /* Reduce big paddings in hero text */
+  .home-text{
+      padding: 120px 20px 40px 20px;
+  }
+
+  .home-text h1{
+      font-size: 2rem;
+  }
+
+  /* Adjust play button so it doesn't go off screen */
+  .play{
+      right: 1.5rem;
+      bottom: 15%;
+  }
+
+  /* Give side padding to main content on mobile */
+  .movies-container,
+  .latest-container,
+  .footer-container,
+  .heading{
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+}
+

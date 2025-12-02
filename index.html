@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineVault OTT Platform</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!--icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!--swiper CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+</head>
+<body>
+
+<!--header section starts-->
+
+  <header>
+
+    <a href="#" class="logo"><i class='bx bx-movie-play'></i> CineVault </a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="movies.html">Movies</a></li>
+      <li><a href="series.html">Series</a></li>
+      <li><a href="explore.html">Explore</a></li>
+    </ul>
+    <a href="watchlist.html" class="btn">+ Watchlist</a>
+   
+   <!-- IMPORTANT: give these exact ids so the script can find them -->
+  <div id="authArea" style="display:inline-block;">
+    <a id="loginBtn" href="http://localhost:5173/" class="btn">Login</a>
+  </div>
+
+  </header>
+
+<!--header section ends-->
+
+<!--home section starts-->
+
+  <section class="swiper home" id="home">
+    <div class="swiper-wrapper">
+      
+      <!--box 1-->
+      <div class="swiper-slide container">
+        <img src="./pictures/home5.jpg" alt="">
+        <div class="home-text">
+          <span>MARVEL UNIVERSE</span>
+          <h1>Avengers: <br>Infinity War</h1>
+          <a href="#" class="btn"><i class='bx bx-play'></i> Watch Now</a>
+        </div>
+      </div>
+
+      <!--box 2-->
+      <div class="swiper-slide container">
+        <img src="./pictures/home3.jpg" alt="">
+        <div class="home-text">
+          <span>MARVEL UNIVERSE</span>
+          <h1>Spider Man: <br>Far from Home</h1>
+          <a href="#" class="btn"><i class='bx bx-play'></i> Watch Now</a>
+        </div>
+      </div>
+
+      <!--box 3-->
+      <div class="swiper-slide container">
+        <img src="./pictures/home7.webp" alt="">
+        <div class="home-text">
+          <span>MARVEL UNIVERSE</span>
+          <h1>Venom: Let There <br> Be carnage</h1>
+          <a href="#" class="btn"><i class='bx bx-play'></i> Watch Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </section>
+
+<!--home section ends-->
+
+<!--movie section starts-->
+
+  <section class="movies" id="movies">
+
+    <h2 class="heading">Trending</h2>
+    <div class="movies-container">
+      
+      <div class="box" data-title="Jurassic World">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/lt1.jpg" alt="">
+        </div>
+        <h3>Jurassic World</h3>
+        <span>145 mins | Action</span>
+      </div>
+
+      <div class="box" data-title="Annabelle">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/lt2.jpg" alt="">
+        </div>
+        <h3>Annabelle</h3>
+        <span>109 mins | Horror</span>
+      </div>
+
+      <div class="box" data-title="Ocean's 8">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/m3.jpg" alt="">
+        </div>
+        <h3>Ocean's 8</h3>
+        <span>120 mins | Action</span>
+      </div>
+
+      <div class="box" data-title="Mufasa">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/m2.jpeg" alt="">
+        </div>
+        <h3>Mufasa</h3>
+        <span>118 mins | Adventure</span>
+      </div>
+
+      <div class="box" data-title="Titanic">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/lt3.jpg" alt="">
+        </div>
+        <h3>Titanic</h3>
+        <span>194 mins | Romance</span>
+      </div>
+
+      <div class="box" data-title="Zootopia">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/lt4.jpg" alt="">
+        </div>
+        <h3>Zootopia</h3>
+        <span>108 mins | Comedy</span>
+      </div>
+
+      <div class="box" data-title="John Wick">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/lt5.jpg" alt="">
+        </div>
+        <h3>John Wick</h3>
+        <span>101 mins | Thirller</span>
+      </div>
+
+      <div class="box" data-title="The Gray Man">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/lt7.jpg" alt="">
+        </div>
+        <h3>The Gray Man</h3>
+        <span>122 mins | Action</span>
+      </div>
+
+      <div class="box" data-title="Jumanji">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/lt8.jpg" alt="">
+        </div>
+        <h3>Jumanji</h3>
+        <span>120 mins | Action</span>
+      </div>
+
+      <div class="box" data-title="Oppenheimer">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/lt10.jpg" alt="">
+        </div>
+        <h3>Oppenheimer</h3>
+        <span>119 mins | Adventure</span>
+      </div>
+
+    </div>
+  </section>
+
+<!--movie section ends-->
+
+<!--Latest Releases section starts-->
+
+<section class="movies" id="movies">
+
+    <h2 class="heading">Latest Releases</h2>
+    <div class="latest-container">
+      
+      <div class="latest-box" data-title="Coolie">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/tr11.jpg" alt="">
+        </div>
+        <h3>Coolie</h3>
+        <span>170 mins | Action</span>
+      </div>
+
+      <div class="latest-box" data-title="Leo">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/tr2.jpg" alt="">
+        </div>
+        <h3>Leo</h3>
+        <span>164 mins | Action</span>
+      </div>
+
+      <div class="latest-box" data-title="Premalu">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/tr3.jpg" alt="">
+        </div>
+        <h3>Premalu</h3>
+        <span>156 mins | Romance</span>
+      </div>
+
+      <div class="latest-box" data-title="Vikram">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/tr4.jpg" alt="">
+        </div>
+        <h3>Vikram</h3>
+        <span>174 mins | Action</span>
+      </div>
+
+      <div class="latest-box" data-title="Jawan">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/tr5.jpg" alt="">
+        </div>
+        <h3>Jawan</h3>
+        <span>169 mins | Threller</span>
+      </div>
+
+      <div class="latest-box" data-title="Manjummel Boys">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/tr6.jpg" alt="">
+        </div>
+        <h3>Manjummel Boys</h3>
+        <span>135 mins | Drama</span>
+      </div>
+
+      <div class="latest-box" data-title="Jana Nayagan">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/tr7.jpg" alt="">
+        </div>
+        <h3>Jana Nayagan</h3>
+        <span>150 mins | Adventure</span>
+      </div>
+
+      <div class="latest-box" data-title="LIK">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/tr8.jpg" alt="">
+        </div>
+        <h3>LIK</h3>
+        <span>140 mins | Romance</span>
+      </div>
+
+      <div class="latest-box" data-title="Good Bad Ugly">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/tr9.jpg" alt="">
+        </div>
+        <h3>Good Bad Ugly</h3>
+        <span>139 mins | Action</span>
+      </div>
+
+      <div class="latest-box" data-title="Tourist Family">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/tr10.jpg" alt="">
+        </div>
+        <h3>Tourist Family</h3>
+        <span>130 mins | Comedy</span>
+      </div>
+
+    </div>
+  </section>
+
+<!--latest Release section ends-->
+
+<!--kids movie section starts-->
+
+<section class="movies" id="movies">
+
+    <h2 class="heading">kids movies</h2>
+    <div class="latest-container">
+      
+      <div class="latest-box" data-title="The Lion King">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/km1.jpg" alt="">
+        </div>
+        <h3>The Lion King</h3>
+        <span>118 mins | Adventure</span>
+      </div>
+
+      <div class="latest-box" data-title="Moana 2">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/kd2.jpg" alt="">
+        </div>
+        <h3>Moana 2</h3>
+        <span>164 mins | Family</span>
+      </div>
+
+      <div class="latest-box" data-title="Disney Cars">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/km3.jpg" alt="">
+        </div>
+        <h3>Disney Cars</h3>
+        <span>117 mins | Comedy</span>
+      </div>
+
+      <div class="latest-box" data-title="Kungfu Panda">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/km4.jpg" alt="">
+        </div>
+        <h3>Kungfu Panda</h3>
+        <span>92 mins | Comedy</span>
+      </div>
+
+      <div class="latest-box" data-title="Tarzan">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/km5.jpg" alt="">
+        </div>
+        <h3>Tarzan</h3>
+        <span>88 mins | Adventure</span>
+      </div>
+
+      <div class="latest-box" data-title="Hotel Transylvania">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/km6.jpg" alt="">
+        </div>
+        <h3>Hotel Transylvania</h3>
+        <span>91 mins | Comedy</span>
+      </div>
+
+      <div class="latest-box" data-title="Angry Birds 2">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/km7.jpg" alt="">
+        </div>
+        <h3>Angry Birds 2</h3>
+        <span>97 mins | Comedy</span>
+      </div>
+
+      <div class="latest-box" data-title="The Tangled">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/km8.jpg" alt="">
+        </div>
+        <h3>The Tangled</h3>
+        <span>91 mins | Adventure</span>
+      </div>
+
+      <div class="latest-box" data-title="Aladdin">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/km9.jpg" alt="">
+        </div>
+        <h3>Aladdin</h3>
+        <span>128 mins | Fantasy</span>
+      </div>
+
+      <div class="latest-box" data-title="Ice Age">
+      <div class="heart">&#10084;</div> <!-- ❤️ heart added here -->
+        <div class="box-img">
+          <img src="./pictures/km10.jpg" alt="">
+        </div>
+        <h3>Ice Age</h3>
+        <span>81 mins | Comedy</span>
+      </div>
+
+    </div>
+  </section>
+
+<!--kids movie section ends-->
+
+<!--footer section starts-->
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2><span><i class='bx bx-movie-play'></i></span>  CineVault</h2>
+      <p>Your gateway to unlimited movies and shows.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="series.html">Series</a></li>
+        <li><a href="explore.html">Explore</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Email: support@cinevault.com</p>
+      <p>Helpline: +91 6385443419</p>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 CineVault | All rights reserved.</p>
+  </div>
+</footer>
+
+<!--footer section ends-->
+
+
+<!--swiper JS (correct one)-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!--custom JS-->
+  <script src="script.js"></script>
+
+  <script src="watchlist.js"></script>
+
+  <div id="root"></div>
+    <script type="module" src="./login-react/login/src/main.jsx"></script>
+
+
+
+
+<script>
+
+    (function () {
+      // small helper to safely escape user text
+      function escapeHtml(str) {
+        return String(str).replace(/[&<>"'`=\/]/g, function (s) {
+          return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;', '/': '&#x2F;', '`': '&#x60;', '=': '&#x3D;' })[s];
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        try {
+          console.log('[auth] start — localStorage:', localStorage.getItem('username'));
+          console.log('[auth] start — sessionStorage:', sessionStorage.getItem('username'));
+
+          // 1) Try storages
+          let username = sessionStorage.getItem('username') || localStorage.getItem('username');
+
+          // 2) If not found, check URL query param ?user=...
+          if (!username) {
+            const params = new URLSearchParams(window.location.search);
+            const qUser = params.get('user');
+            if (qUser) {
+              username = qUser;
+              // Save to session so a reload keeps username for this tab
+              sessionStorage.setItem('username', username);
+              console.log('[auth] got username from URL param and saved to sessionStorage:', username);
+              // Remove query param (clean URL)
+              history.replaceState(null, '', window.location.pathname);
+            }
+          }
+
+          const authArea = document.getElementById('authArea');
+          if (!authArea) {
+            console.warn('[auth] #authArea not found in DOM.');
+            return;
+          }
+
+          if (username) {
+            console.log('[auth] username found, updating header:', username);
+
+            // Replace auth area with username + logout
+            authArea.innerHTML = `
+          <button id="userBtn" class="btn" title="Signed in" style="pointer-events:none; opacity:0.95; background:green; color:white;">
+          <i class="fa fa-user" style="margin-right:6px;"></i>
+            ${escapeHtml(username)}
+          </button>
+          <button id="logoutBtn" class="btn" style="margin-left:8px; cursor:pointer;"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+        `;
+
+            // Logout: clear both storages and reload
+            document.getElementById('logoutBtn').addEventListener('click', () => {
+              sessionStorage.removeItem('username');
+              localStorage.removeItem('username');
+              console.log('[auth] logout — cleared storage');
+              location.reload();
+            });
+          } else {
+            console.log('[auth] no username — showing Login');
+            const loginBtn = document.getElementById('loginBtn');
+            if (loginBtn) {
+              // point the Login link back to your React app dev server
+              loginBtn.href = 'http://localhost:5173/';
+            }
+          }
+        } catch (err) {
+          console.error('[auth] error:', err);
+        }
+      });
+    })();
+    
+  </script>
+
+
+</body>
+</html>
